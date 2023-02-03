@@ -14,11 +14,11 @@ parser.add_argument("--scopes", nargs="+", type=str, help="The scopes argument")
 args = parser.parse_args()
 
 token_file = args.token
-credentials_file = args.credential
+CLIENT_SECRET = args.credential
 SCOPES = args.scopes
 # Print input variables
 print("Token: "     ,   token_file)
-print("Credential: ",   credentials_file)
+print("Credential: ",   CLIENT_SECRET)
 print("Scopes: "    ,   SCOPES)
 
 creds = None
